@@ -18,3 +18,5 @@ python generate_predictions.py \
         --predictions data/predictions.csv
 
 python reference/compare-csv-files.py data/predictions.csv reference/predictions.csv
+
+python tests.py
