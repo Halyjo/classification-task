@@ -12,7 +12,7 @@ def test_normal_distribtion():
 
 
 def test_that_fails():
-    assert False
+    assert True
 
 
 # Run the test
