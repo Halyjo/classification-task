@@ -1,6 +1,7 @@
 import numpy as np
 from generate_data import normal_distribution
 import pytest
+import sys
 
 
 def test_normal_distribtion():
@@ -10,6 +11,11 @@ def test_normal_distribtion():
     assert len(data) == 10
 
 
+def test_that_fails():
+    assert True
+
+
 # Run the test
 if __name__ == "__main__":
-    pytest.main(["-v", "tests.py"])
+    n_failed = pytest.main(["-v", "tests.py"])
+    sys.exit(n_failed)
