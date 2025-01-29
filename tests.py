@@ -10,6 +10,10 @@ def test_normal_distribtion():
     assert len(data) == 10
 
 
+def test_that_fails():
+    assert False
+
+
 # Run the test
 if __name__ == "__main__":
     pytest.main(["-v", "tests.py"])
